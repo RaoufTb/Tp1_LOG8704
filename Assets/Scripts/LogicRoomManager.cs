@@ -15,7 +15,7 @@ public class LogicRoomManager : MonoBehaviour
     public GameObject door;
 
     private int answerQ1 = 42;
-    private int answerQ2 = 18;
+    private int answerQ2 = 40;
     private int answerQ3 = 25;
 
     public AudioClip goodSound;
