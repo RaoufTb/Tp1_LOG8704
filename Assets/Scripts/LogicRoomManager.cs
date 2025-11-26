@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.XR;
 
 public class LogicRoomManager : MonoBehaviour
 {
@@ -87,6 +88,12 @@ public class LogicRoomManager : MonoBehaviour
                 {
                     audioSource.PlayOneShot(badSound);
                     wasRight = false;
+
+                    InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+                    if (device.TryGetHapticCapabilities(out HapticCapabilities caps) && caps.supportsImpulse)
+                    {
+                        device.SendHapticImpulse(0, 0.7f, 0.8f);
+                    }
                 }
 
                 return false;

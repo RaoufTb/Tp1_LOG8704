@@ -3,6 +3,7 @@ using UnityEngine;
 public class LevelUnlocked : MonoBehaviour
 {
     public GameObject targetToDeactivate;
+    public GameObject text;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -11,6 +12,8 @@ public class LevelUnlocked : MonoBehaviour
             if (targetToDeactivate != null)
             {
                 targetToDeactivate.SetActive(false);
+                text.SetActive(true);
+
             }
         }
     }

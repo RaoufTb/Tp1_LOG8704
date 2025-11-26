@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class formValidator : MonoBehaviour
 {
@@ -91,7 +92,14 @@ public class formValidator : MonoBehaviour
         switch (newState)
         {
             case State.Correct: ApplyColor(correctColor); break;
-            case State.Wrong: ApplyColor(wrongColor); break;
+            case State.Wrong:
+                InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+                if (device.TryGetHapticCapabilities(out HapticCapabilities caps) && caps.supportsImpulse)
+                {
+                    device.SendHapticImpulse(0, 0.7f, 0.8f);
+                }
+                ApplyColor(wrongColor); 
+                break;
             default: ApplyColor(defaultColor); break;
         }
     }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class RotationLight : MonoBehaviour
 {
@@ -34,7 +35,13 @@ public class RotationLight : MonoBehaviour
 
             if (wasRight)
             {
-                PlaySound(badSound); 
+                PlaySound(badSound);
+
+                InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+                if (device.TryGetHapticCapabilities(out HapticCapabilities caps) && caps.supportsImpulse)
+                {
+                    device.SendHapticImpulse(0, 0.7f, 0.8f);
+                }
             }
 
             wasRight = false; 

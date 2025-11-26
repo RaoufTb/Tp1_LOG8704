@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.XR;
+
 
 public class IsPrimeNumber : MonoBehaviour
 {
@@ -47,6 +49,11 @@ public class IsPrimeNumber : MonoBehaviour
                 {
                     cameraRig.transform.position = teleportPosition;
                     audioRoom.PlayOneShot(badAnswer);
+                }
+                InputDevice device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+                if (device.TryGetHapticCapabilities(out HapticCapabilities caps) && caps.supportsImpulse)
+                {
+                    device.SendHapticImpulse(0, 0.7f, 0.8f);
                 }
             }
         }
