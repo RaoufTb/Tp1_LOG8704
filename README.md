@@ -1,4 +1,4 @@
-# Projet VR – Déplacements dans Unity
+# Projet VR
 
 ## Scène à utiliser
 La scène à builder/tester se trouve dans : Assets/Scenes/SampleScene
