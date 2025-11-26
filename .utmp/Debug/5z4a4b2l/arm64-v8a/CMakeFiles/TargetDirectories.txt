@@ -1,0 +1,5 @@
+C:/Users/raouf/Documents/School/Log8704/Tp1_Log8704/.utmp/Debug/5z4a4b2l/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/raouf/Documents/School/Log8704/Tp1_Log8704/.utmp/Debug/5z4a4b2l/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/raouf/Documents/School/Log8704/Tp1_Log8704/.utmp/Debug/5z4a4b2l/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/raouf/Documents/School/Log8704/Tp1_Log8704/.utmp/Debug/5z4a4b2l/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/raouf/Documents/School/Log8704/Tp1_Log8704/.utmp/Debug/5z4a4b2l/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
