@@ -1,36 +1,25 @@
-# Projet VR – Déplacements dans Unity
+# Projet VR
 
 ## Scène à utiliser
 La scène à builder/tester se trouve dans : Assets/Scenes/SampleScene
 
-
-
 ---
 
 ## Mécaniques présentes
-- **Déplacement physique** 
 - **Déplacement par joystick** 
-- **Déplacement par téléportation**
+- **Ray Grab Interacion**
+- **Ray Interacion**
 
 ---
 
 ## Méthodes de test
 L’application peut être testée de deux façons :  
-1. **Simulateur Meta XR (Windows)**  
-2. **Casque VR (Meta Quest 3)**  
-
+1. **Casque VR (Meta Quest 3)**  
+2. **Simulateur Meta XR (Windows)** 
 ---
 
-### 🔹 1. Test via le simulateur Meta XR (Windows)
-Contrôles disponibles :  
 
-- **Déplacement physique** : `WASD`   
-- **Déplacement par joystick** : `YGHJ` (uniquement manette gauche simulée)  
-- **Déplacement par téléportation** : `Y` + viser avec la souris (uniquement manette droite simulée)  
-
----
-
-### 🔹 2. Test via le casque VR
+### 🔹 1. Test via le casque VR
 Étapes d’installation et de build :  
 
 1. Brancher le casque à l’ordinateur.  
@@ -42,8 +31,17 @@ Contrôles disponibles :
 7. Nommer le build.  
 
 Contrôles disponibles :  
-- **Déplacement physique** : bouger directement dans le monde réel.  
-- **Déplacement par joystick** : utiliser le joystick gauche de la manette.  
-- **Déplacement par téléportation** : orienter le joystick droit vers l’avant et viser.  
+- **Déplacement par joystick** : Joystick gauche de la manette.
+- **Ray Grab Interacion**      : Pointer + gachette de la manette
+- **Ray Interacion**           : Pointer + gachette de la manette
 
 ---
+
+### 🔹 2. Test via le simulateur Meta XR (Windows)
+Contrôles disponibles :  
+
+- **Déplacement par joystick** : `YGHJ` (uniquement manette gauche simulée)  
+- **Ray Grab Interacion**      : Pointer + gachette de la manette
+- **Ray Interacion**           : Pointer + click de la souris
+
+
