@@ -1,0 +1,2 @@
+C:\Users\Hamza\Desktop\LOG8704\Tp1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.UnityTechnologies.com.unity.template.urpblank\gradle-project\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Hamza\Desktop\LOG8704\Tp1_LOG8704\Library\PramData\AndroidApplicationController\Cache\com.UnityTechnologies.com.unity.template.urpblank\gradle-project\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
